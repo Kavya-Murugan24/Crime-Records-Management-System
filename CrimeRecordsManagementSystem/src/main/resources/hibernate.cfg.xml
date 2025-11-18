@@ -1,0 +1,32 @@
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/crime_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">farnazfz</property>
+
+     <!-- Hibernate Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Connection Pool (optional) -->
+        <property name="hibernate.connection.pool_size">10</property>
+
+        <!-- Show SQL in console -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Automatically create tables -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Entity Mappings -->
+        <mapping class="model.User"/>
+        <mapping class="model.Crime"/>
+        <mapping class="model.Criminal"/>
+        <mapping class="model.Victim"/>
+        <mapping class="model.FIR"/>
+
+    </session-factory>
+</hibernate-configuration>
