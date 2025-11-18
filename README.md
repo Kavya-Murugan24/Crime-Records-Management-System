@@ -168,5 +168,3 @@ The Crime Records Management System provides a secure, efficient, and scalable b
 
 
 
-## 📦 System Architecture
-
